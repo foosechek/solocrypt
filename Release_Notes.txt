@@ -1,0 +1,47 @@
+                CST 2.3.1 Release Notes
+
+
+PROJECT(S):             CST
+DATE:                   July 1, 2015
+
+           FREESCALE CONFIDENTIAL PROPRIETARY
+           COPYRIGHT © 2015, FREESCALE
+           ALL RIGHTS RESERVED. PRESENCE OF COPYRIGHT
+           NOTICE IS NOT AN ACKNOWLEDGEMENT OF PUBLICATION.
+
+1 READ ME FIRST
+    This is the Freescale Code Signing Tool (CST) for the High
+    Assurance Boot (HAB) library. The CST provides software code
+    signing support designed for use with Freescale processors that
+    integrate the HAB library in the internal boot ROM. This release
+    provides the features required for the code signing for SoC
+    supporting HAB version 3 and HAB version 4.
+
+1.1 REQUIREMENTS
+    This release supports Linux hosts only.
+    The CST is known to work on Ubuntu 14.04 and later.
+
+    Most Linux releases should work but they have not been fully
+    tested. If you run into library problems, see section 2.1 below
+    for instructions on how to relink CST.
+
+    The CST requires OpenSSL version 1.0.1f or later to be installed
+    on the host machine. With the openssl/bin directory included in
+    the search path.
+
+1.2 PROBLEM REPORTING INSTRUCTIONS
+    Problems with this release may be reported to your local Freescale
+    representative or at community.freescale.com.
+
+
+2 NEW FEATURES & Fixes
+    The following is included in this release:
+
+2.1 Fix for srktool
+    This version of CST fixes an error in the 64 bit version of
+    srktool, where it would generate an invalid table.
+
+3 KNOWN ISSUES
+
+No known issues.
+

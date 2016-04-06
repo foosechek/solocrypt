@@ -1,0 +1,14 @@
+import struct
+import os
+
+ub_size = os.path.getsize("u-boot.imx")
+file_in = open("u-boot.imx", "rb")
+hdr, =struct.unpack("I",file_in.read(4))
+ivt_ent, =struct.unpack("I",file_in.read(4))
+res1, =struct.unpack("I",file_in.read(4))
+dcd, =struct.unpack("I",file_in.read(4))
+boot, =struct.unpack("I",file_in.read(4))
+self, =struct.unpack("I",file_in.read(4))
+
+print format (boot, '08x')
+print boot
